@@ -1,5 +1,11 @@
+/* Default Modules, Components and Other Files*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { environment } from 'src/environments/environment';
 
 /* Components */
 import { CreateProductComponent } from './components/create-product/create-product.component';
@@ -10,18 +16,14 @@ import { HeaderComponent } from './template/header/header.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { NavbarComponent } from './template/navbar/navbar.component';
 
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+/* Firebase Module */
 import { AngularFireModule } from '@angular/fire';
-import { environment } from 'src/environments/environment';
-
 
 /* Material Imports */
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -44,7 +46,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatGridListModule,
     MatButtonModule,
     MatToolbarModule,
+    MatIconModule,
     /*Material Modules - End*/
+
+    FormsModule,
 
     AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
