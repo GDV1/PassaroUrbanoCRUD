@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "PassaroUrbanoCRUD"
+    }
+  },
+  "defaultProject": "PassaroUrbanoCRUD",
+  "cli": {
+    "analytics": "52cc13fe-31ef-4834-8e6d-8d6e201f75fc"
+  }
 }
