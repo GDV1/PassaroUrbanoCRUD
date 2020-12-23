@@ -19,12 +19,6 @@ import { NavbarComponent } from './template/navbar/navbar.component';
 /* Firebase Module */
 import { AngularFireModule } from '@angular/fire';
 
-/* Material Imports */
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatButtonModule} from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule} from '@angular/material/icon';
-
 
 @NgModule({
   declarations: [
@@ -41,17 +35,9 @@ import {MatIconModule} from '@angular/material/icon';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    
-    /*Material Modules - Start*/
-    MatGridListModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatIconModule,
-    /*Material Modules - End*/
-
     FormsModule,
-
     AngularFireModule.initializeApp(environment.firebaseConfig)
+
   ],
   providers: [],
   bootstrap: [AppComponent]
