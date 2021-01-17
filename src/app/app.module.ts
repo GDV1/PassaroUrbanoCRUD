@@ -17,7 +17,7 @@ import { FooterComponent } from './template/footer/footer.component';
 import { NavbarComponent } from './template/navbar/navbar.component';
 
 /* Firebase Module */
-import { AngularFireModule } from '@angular/fire';
+
 
 
 @NgModule({
@@ -35,9 +35,7 @@ import { AngularFireModule } from '@angular/fire';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
-
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
