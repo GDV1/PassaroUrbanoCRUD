@@ -15,6 +15,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
 import { HeaderComponent } from './template/header/header.component';
 import { FooterComponent } from './template/footer/footer.component';
 import { NavbarComponent } from './template/navbar/navbar.component';
+import { AngularFireModule } from '@angular/fire';
 
 /* Firebase Module */
 
@@ -35,7 +36,10 @@ import { NavbarComponent } from './template/navbar/navbar.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+
+    // Firebase imports
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]
