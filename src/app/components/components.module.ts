@@ -4,17 +4,20 @@ import { CommonModule } from '@angular/common';
 
 // Components
 import { LoginComponent } from './login/login.component';
+import { ListaProdutosComponent } from './lista-produtos/lista-produtos.component';
 
 
 @NgModule({
   declarations: [ 
-    LoginComponent
+    LoginComponent, 
+    ListaProdutosComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    LoginComponent
+    LoginComponent,
+    ListaProdutosComponent
   ]
 })
 export class ComponentsModule { }
